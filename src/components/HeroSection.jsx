@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import ServiceCards from "./ServiceCards";
+import YoutubeLinks from './YoutubeLinks';
+import WhatWeDo from './WhatWeDo';
+import LandingPage from './LandingPage';
 // import banner from '../assets/banner.jpg';
 
 const HeroContainer = styled.div`
@@ -9,7 +12,8 @@ const HeroContainer = styled.div`
   align-items: center;
   justify-content: center;
   color: blue;
-  padding:20px;
+  background:white;
+  padding:12px;
 `;
 
 const HeroText = styled.h1`
@@ -22,8 +26,11 @@ const HeroSection = () => {
  
   return (
     <HeroContainer>
-      <HeroText>Welcome to RoboSphere: Explore the World of Robotics</HeroText>
+      <HeroText>Welcome to RoboSphere: Explore the World of Robotics</HeroText>\
+      <LandingPage />
       <ServiceCards />
+      <WhatWeDo />
+      <YoutubeLinks />
     </HeroContainer>
   );
 };
